@@ -1,0 +1,70 @@
+{
+  "lab": "Lab Session 2 \u2014 Forex Prediction (Regression)",
+  "date": "2026-05-26T18:24:49.067919",
+  "pairs": [
+    "EURUSD",
+    "EURMAD",
+    "USDMAD"
+  ],
+  "models": [
+    "LSTM_Simple",
+    "BiGRU_MHA"
+  ],
+  "window": 60,
+  "metric": "RMSE (valeur r\u00e9elle)",
+  "summary": [
+    {
+      "pair": "EURUSD",
+      "LSTM_Simple_rmse": 0.012232,
+      "LSTM_Simple_mae": 0.00979,
+      "LSTM_Simple_mape": 0.8734,
+      "BiGRU_MHA_rmse": 0.011756,
+      "BiGRU_MHA_mae": 0.009039,
+      "BiGRU_MHA_mape": 0.806
+    },
+    {
+      "pair": "EURMAD",
+      "LSTM_Simple_rmse": 0.04525,
+      "LSTM_Simple_mae": 0.033036,
+      "LSTM_Simple_mape": 0.3194,
+      "BiGRU_MHA_rmse": 0.051101,
+      "BiGRU_MHA_mae": 0.03745,
+      "BiGRU_MHA_mape": 0.3628
+    },
+    {
+      "pair": "USDMAD",
+      "LSTM_Simple_rmse": 0.166958,
+      "LSTM_Simple_mae": 0.145974,
+      "LSTM_Simple_mape": 1.5327,
+      "BiGRU_MHA_rmse": 0.178035,
+      "BiGRU_MHA_mae": 0.154227,
+      "BiGRU_MHA_mape": 1.6091
+    }
+  ],
+  "interpretations_2026": {
+    "EURUSD_BiGRU_MHA": {
+      "trend": "haussi\u00e8re \ud83d\udcc8",
+      "pct_change": 0.97,
+      "start_price": 1.18674,
+      "end_price": 1.19825,
+      "period_start": "2026-01-01",
+      "period_end": "2026-12-18"
+    },
+    "EURMAD_LSTM_Simple": {
+      "trend": "baissi\u00e8re \ud83d\udcc9",
+      "pct_change": -0.0,
+      "start_price": 10.40931,
+      "end_price": 10.40897,
+      "period_start": "2026-01-01",
+      "period_end": "2026-12-18"
+    },
+    "USDMAD_LSTM_Simple": {
+      "trend": "baissi\u00e8re \ud83d\udcc9",
+      "pct_change": -1.08,
+      "start_price": 9.03679,
+      "end_price": 8.93901,
+      "period_start": "2026-01-01",
+      "period_end": "2026-12-18"
+    }
+  }
+}
