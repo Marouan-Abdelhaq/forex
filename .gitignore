@@ -1,0 +1,36 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Environnements virtuels ---
+venv/
+env/
+.env
+
+# --- Données (Très important, ne jamais pusher vos CSV/NPY) ---
+data/raw/*.csv
+data/processed/*.npy
+data/
+*.csv
+
+# --- Modèles (Ne pas pusher les fichiers de poids lourds) ---
+models/*.keras
+models/*.pkl
+models/*.h5
+
+# --- Rapports et Logs ---
+reports/*.json
+logs/
+*.log
+
+# --- Systèmes d'exploitation ---
+.DS_Store
+Thumbs.db
+
+# --- Jupyter Notebooks (optionnel) ---
+.ipynb_checkpoints/
+
+# --- IDEs ---
+.vscode/
+.idea/
