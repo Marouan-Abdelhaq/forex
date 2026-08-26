@@ -1,36 +1,37 @@
-# --- Python ---
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
 
-# --- Environnements virtuels ---
+# Environments
 venv/
 env/
+.venv/
 .env
 
-# --- Données (Très important, ne jamais pusher vos CSV/NPY) ---
-data/raw/*.csv
-data/processed/*.npy
+# Data
 data/
 *.csv
+*.npy
 
-# --- Modèles (Ne pas pusher les fichiers de poids lourds) ---
-models/*.keras
-models/*.pkl
-models/*.h5
+# Models
+models/
+*.keras
+*.pkl
+*.h5
 
-# --- Rapports et Logs ---
-reports/*.json
+# Reports & logs
+reports/
 logs/
 *.log
 
-# --- Systèmes d'exploitation ---
+# OS
 .DS_Store
 Thumbs.db
 
-# --- Jupyter Notebooks (optionnel) ---
+# Jupyter
 .ipynb_checkpoints/
 
-# --- IDEs ---
+# IDE
 .vscode/
 .idea/
